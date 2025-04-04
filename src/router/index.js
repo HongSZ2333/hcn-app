@@ -4,6 +4,7 @@ import HomePage from '../views/home.vue'
 import LoginPage from '../views/auth/login.vue'
 import RegisterPage from '../views/auth/register.vue'
 import Clientarea from '../views/user/clientarea.vue'
+import resource from '../views/user/resource.vue'
 
 const routes = [
     {
@@ -25,6 +26,11 @@ const routes = [
         path: '/user/clientarea',
         name: 'ClientArea',
         component: Clientarea
+    },
+    {
+        path: '/user/clientarea/resource',
+        name: 'resource',
+        component: resource
     },
     {
         path: '/:pathMatch(.*)*',
